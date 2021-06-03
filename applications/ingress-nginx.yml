@@ -16,3 +16,5 @@ spec:
     controller:
       service:
         type: ClusterIP
+
+      replicaCount: 3
