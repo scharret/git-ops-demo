@@ -1,6 +1,7 @@
 # Create Namespace
 
 kubectl create ns flux-demo
+
 kubectl create ns app
 
 # Install Flux & HelmRelease
