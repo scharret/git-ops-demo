@@ -14,8 +14,6 @@ spec:
     version: 3.31.0
   values:
     controller:
-      replicaCount: 3
       service:
         type: ClusterIP
 
-      replicaCount: 3
