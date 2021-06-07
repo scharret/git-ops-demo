@@ -1,4 +1,6 @@
-# Create Namespace
+# Flux config
+
+## Create Namespace
 
 ```bash
 kubectl create ns flux-demo
@@ -6,7 +8,7 @@ kubectl create ns flux-demo
 kubectl create ns app
 ```
 
-# Install Flux & HelmRelease
+## Install Flux & HelmRelease
 
 ```bash
 helm repo add fluxcd https://charts.fluxcd.io
@@ -32,7 +34,7 @@ helm upgrade -i helm-operator fluxcd/helm-operator --wait \
 --set helm.versions=v3
 ```
 
-# Get Deploy Key And add it as deploy key in Github repository
+## Get Deploy Key And add it as deploy key in Github repository
 
 ```bash
 fluxctl identity --k8s-fwd-ns fluxcd > clipcopy
