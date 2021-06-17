@@ -2,6 +2,30 @@
 
 This repository is attended to be used for the CloudOuest 2021 conference as a playground.
 
+## Create a sandbox cluster with Kind tool
+
+Download (Kind)[https://kind.sigs.k8s.io/]
+
+For this demo we will used this sample configuration (available at ./kind/config.yml) which will create one Main node and two Workers nodes (which is far sufficent to our needs, feel free to add more if you are able to :) )
+
+```bash
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: git-ops-demo
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+```
+
+Set the Kind Kubernetes context:
+
+```bash
+kubectl cluster-info --context kind-git-ops-demo
+```
+
+You are ready to start 🎉
+
 ## Flux config
 
 ### Create Namespace
