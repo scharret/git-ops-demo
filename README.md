@@ -1,6 +1,16 @@
 # GitOps: The deployment in prod with git push
 
-This repository is attended to be used for the CloudOuest 2021 conference as a playground.
+> **Archived demo (2021).** This repository is the live-demo playground for the talk
+> *"GitOps: The deployment in prod with git push"*, given at **CloudOuest 2021**
+> by Mathieu Herbert and Sébastien Charret.
+>
+> It relies on **Flux v1** and the **Helm Operator**, which have both been deprecated since.
+> The concepts (Git as source of truth, pull-based reconciliation, drift correction, sealed secrets)
+> are still valid, but for a new setup today I would use **Flux v2** (`source-controller`,
+> `kustomize-controller` and `helm-controller` with `HelmRelease` v2) or **Argo CD**,
+> and the instructions below should not be followed as-is.
+
+This repository was intended to be used for the CloudOuest 2021 conference as a playground.
 
 ## Create a sandbox cluster with Kind tool
 
